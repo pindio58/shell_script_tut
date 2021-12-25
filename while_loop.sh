@@ -11,10 +11,11 @@ num=1
 
 while [ "$num" -le 3 ]
     do
-        # echo "$num"
+        echo "$num"
         # num=$(( num+1 ))
         # sleep 0.5                                                 # sleep for 0.5 sec
         (( num++ ))
+        # (( num+1 ))                                                 # simply ding this, does not assign
         # gnome-terminal &                                  # will open the terminal
     done
 
@@ -40,9 +41,9 @@ while [ "$num" -le 3 ]
 
 
 # my own testing
-while IFS=' ' read -r name
-    do
-        echo "$name"
-    done << EOF
-$(ls -l)
-EOF
+# while IFS=' ' read -r name
+#     do
+#         echo "$name"
+#     done << EOF
+# $(ls -l)
+# EOF
